@@ -23,7 +23,7 @@ class VoxCPMDemo:
         self.asr_model: Optional[AutoModel] = AutoModel(
             model=self.asr_model_id,
             disable_update=True,
-            log_level='WARNING',  # reduced from DEBUG to cut down noisy logs
+            log_level='ERROR',  # changed from WARNING to ERROR to further reduce noise
             device="cuda:0" if self.device == "cuda" else "cpu",
         )
 
@@ -45,6 +45,7 @@ class VoxCPMDemo:
 
         repo_id = os.environ.get("HF_REPO_ID", "").strip()
         if len(repo_id) > 0:
+            # Replace '/' with '__' to avoid nested directory issues on Windows too
             target_dir = os.path.join("models", repo_id.replace("/", "__"))
             if not os.path.isdir(target_dir):
                 try:
@@ -72,5 +73,4 @@ class VoxCPMDemo:
     def prompt_wav_recognition(self, prompt_wav: Optional[str]) -> str:
         if prompt_wav is None:
             return ""
-        res = self.asr_model.generate(input=prompt_wav, language="auto", use_itn=True)
-        text = res[0]["text"].split('|>')[-1
+        res 
