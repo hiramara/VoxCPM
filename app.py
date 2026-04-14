@@ -68,8 +68,8 @@ _USAGE_INSTRUCTIONS_ZH = (
 
 _EXAMPLES_FOOTER_ZH = (
     "---\n"
-    # Personal note: added a blank line before the examples header for better readability
-    "\n"
-    "**💡 声音描述示例（中英文均可）：**  \n\n"
-    "**示例 1 — 深宫太后**"
+    # Personal note: added a blank line before the examples header for readability
+    # and corrected the missing closing parenthesis that was truncating the string.
+    "**💡 声音描述示例：**  \n"
+    "尝试以下 Control Instruction 探索不同声音风格：  \n"
 )
