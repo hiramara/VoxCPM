@@ -68,8 +68,11 @@ _USAGE_INSTRUCTIONS_ZH = (
 
 _EXAMPLES_FOOTER_ZH = (
     "---\n"
-    # Personal note: added a blank line before the examples header for readability
-    # and corrected the missing closing parenthesis that was truncating the string.
+    # Personal note: added a blank line before the examples section for readability,
+    # and added a third example (calm narrator) that I find useful for audiobook-style TTS.
     "**💡 声音描述示例：**  \n"
-    "尝试以下 Control Instruction 探索不同声音风格：  \n"
+    "尝试以下 Control Instruction 来探索不同的声音风格：  \n\n"
+    "**示例 3 — 沉稳播音腔**  \n"
+    "`Control Instruction`: *\"中年男性，声音低沉浑厚，语速平稳，带有专业播音腔调。\"*  \n"
+    "`Target Text`: *\"欢迎收听今天的节目，我们将带您走进一段不为人知的历史。\"*"
 )
