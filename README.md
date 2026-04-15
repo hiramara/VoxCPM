@@ -35,6 +35,8 @@
 </p>
 
 > **Personal fork note:** I'm using this project to experiment with voice cloning for language learning demos. Main branch tracks upstream; my experiments live in the `experiments/` branch.
+>
+> **My tested languages:** Japanese and Spanish cloning work well with ~5s reference audio. For Mandarin tones, I found 10s+ reference clips give noticeably better results. See `experiments/lang_notes.md` for details.
 
 VoxCPM is a **tokenizer-free** Text-to-Speech system that directly generates continuous speech representations via an end-to-end **diffusion autoregressive architecture**, bypassing discrete tokenization to achieve highly natural and expressive synthesis.
 
@@ -43,5 +45,4 @@ VoxCPM is a **tokenizer-free** Text-to-Speech system that directly generates con
 ### ✨ Highlights
 
 - 🌍 **30-Language Multilingual** — Input text in any of the 30 supported languages and synthesize directly, no language tag needed
-- 🎨 **Voice Design** — Create a brand-new voice from a natural-language description alone (gender, age, tone, emotion, pace …), no reference audio required
-- 🎛️ **Controllable Cloning** — Clone any voice from a short reference clip, with optional style guidance to steer emotion, pac
+- 🎨 **Voice Design** — Create a brand-new voice from a natural-language description alone (g
